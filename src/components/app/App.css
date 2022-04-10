@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+* {
+    font-family: "Roboto Condensed", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App {background:whitesmoke}
+
+header {
+    background: #333;
+    -webkit-box-shadow: 0px 3px 15px 0px rgba(51,51,3,1);
+    -moz-box-shadow: 0px 3px 15px 0px rgba(51,51,3,1);
+    box-shadow: 0px 3px 15px 0px rgba(51,51,3,1);
+}
+
+header .wrapper {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .wrapper .logo {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+
+header .wrapper .logo:hover {
+    transform: rotate(45deg);
+}
+
+header .wrapper .currencies {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#eur, #usd {
+    padding: 15px 50px;
+    border: 2px solid #e06149;
+    border-radius: 5px;
+    color: whitesmoke;
+    background: #e06149;
+    font-weight: 700;
+} 
+
+header .wrapper .logo img {
+    width: 100%;
+}
+
+main {
+    padding: 100px 0;
+    height: 100vh;
+}
+
+main .converter {
+    margin: 0 auto;
+    width: 70%;
+    border: 2px solid black;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 50px;
+}
+
+main .converter .firstVal input, main .converter .secondVal input,
+main .converter .firstVal select, main .converter .secondVal select {
+    border-radius: 5px;
+    padding: 15px 25px;
+    font-weight: 700;
+    font-size: 16px;
+    border: 2px solid black;
+}
+
+main .converter .firstVal select, main .converter .secondVal select {margin-left: 10px}
+
+#equals {
+    align-items: center;
+    font-size: 50px;
+    font-style: italic;
+}
